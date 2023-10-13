@@ -32,31 +32,22 @@
                         mathematics and ML.
                     </p>
                 </a>
+                <div class="row accent">
+                    <p class="col-12 text-center">
+                        <a href="/#aboutMe">More about me.</a>
+                    </p>
+                </div>
                 <div class="row center">
                     <p class="col-12 text-center">
-                        Currently working at
-                        <a href="https://www.ichec.ie/">ICHEC Dublin</a>
-                        on <a href="https://git.ichec.ie/io-sea-internal/hestia">Hestia</a>, as part of <a
-                            href="https://iosea-project.eu/">IO-SEA</a>.
+                        I am starting work with Partec AG
+                        in November of 2023, as such
+                        I am no longer seeking new roles.
                     </p>
                 </div>
 
                 <div class="row center">
                     <p class="col-12 text-center">
-                        <em>
-                            Seeking information about
-                            work opportunities
-                            starting October 2023,
-                            either remotely or in the
-                            area of Coventry.
-                        </em>
-                    </p>
-                </div>
-
-                <div class="row center">
-                    <p class="col-12 text-center">
-                        Please find my CV on <a
-                            href="https://www.linkedin.com/in/caelen-feller/">LinkedIn</a>.
+                        Please find my CV on <a href="https://www.linkedin.com/in/caelen-feller/">LinkedIn</a>.
                     </p>
                 </div>
 
@@ -86,6 +77,35 @@
                             but you can find further information on my more discursive projects here.
                         </p>
                         <ul>
+                            <li><a href="https://github.com/caelen-feller/hestia-clone">Hestia</a> - A Hierarchical
+                                Storage Manager (HSM) for hetereogeneous devices - <a data-toggle="collapse"
+                                    href="#moreInfoHestia" role="button" aria-expanded="false"
+                                    aria-controls="moreInfoHestia"> see more</a>:</li>
+                            <div class="collapse" id="moreInfoHestia">
+                                <p style="margin: 1em;">
+                                    Hestia's role in the IO-SEA project was/is to provide an efficient storage
+                                    manipulation API, which provides an event feed of storage events allowing a "policy
+                                    manager" (based on CEA's Robinhood engine) to manipulate data across the tiers
+                                    exposed by Hestia. The policy manager will use the feed to ensure the data are in
+                                    the optimal locations for user-end applications on target cluster.
+
+                                    My initial focus in Hestia was in the DevOps of the project, overhauling this
+                                    completely to provide a more robust continuous integration toolchain which fully
+                                    utilizes Gitlab's CI toolkit and containerized workflows, and well as providing a
+                                    new, automated testing and deployment workflow. Following this I implemented a first
+                                    draft of Hestia's event feed, and presented this to stakeholders and collaborators
+                                    for feedback. I helped in using this feedback to create the feature's second
+                                    revision. Participated in the target-driven testing and review for delivering
+                                    Hestia's first full release. Re-worked the CI system once more as the complexity of
+                                    the project's needs grew into a re-usable and testable Python module for CI
+                                    operations.
+
+                                    Additionally, I took advantage of time provided by ICHEC to pursue development of my
+                                    other skill sets by taking part in EuroCC-run workshops. Notable mentions include a
+                                    multi-day workshop on the topic of distributed machine learning techniques in a HPC
+                                    context and and introduction to the use of the ParaStation software suite.
+                                </p>
+                            </div>
                             <li>Final Year Project - <a href="https://github.com/caelen-feller/fyp">Solving Laplace
                                     Problems with Corner Singularities</a></li>
                             <li>PRACE & EPCC Research Internship - <a href="/2019-internship/">Parallel Computing
@@ -96,14 +116,13 @@
                             <li>TCD Undergraduate Internship - <a href="/2018-internship/">Arbitrary
                                     Precision Computation of Modular Forms</a></li>
                         </ul>
-                        <h2> About me</h2>
+                        <h2 id="aboutMe"> About me</h2>
                         <p>
                             Caelen joined <a href="https://www.ichec.ie/">ICHEC Dublin</a> in April 2023. At ICHEC, she
-                            is currently involved in developing software for hierarchical storage management (HSM). She
-                            is participating in the <a href="https://iosea-project.eu/">IO-SEA</a> WP4 Deliverable 4.3,
-                            working on the HSM API <a href="https://git.ichec.ie/io-sea-internal/hestia">Hestia</a>. She
-                            intends on being involved with an emerging team for building a quantum computing tools for
-                            HPC environments.
+                            was involved in developing software for hierarchical storage management (HSM). She
+                            participated in completing the <a href="https://iosea-project.eu/">IO-SEA</a> WP4
+                            Deliverable 4.3,
+                            working on the HSM API <a href="https://git.ichec.ie/io-sea-internal/hestia">Hestia</a>.
                         </p>
                         <p>
                             Prior to joining ICHEC, Caelen worked on research projects in HPC, mathematical modelling
@@ -130,10 +149,15 @@
             </div>
         </div>
 
-        <script src="/js/vendor/modernizr-3.5.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
