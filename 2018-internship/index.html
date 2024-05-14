@@ -1,103 +1,110 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Modular Form Computation</title>
-    <meta name="description" content="Caelen Feller's Personal Webpage">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+  <meta charset="utf-8" />
+  <title>Hestia - Caelen Murphy Feller</title>
+  <meta name="description" content="Caelen Murphy Feller's Personal Webpage" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
+  <link rel="stylesheet" href="/css/main.css" />
 </head>
 
-<body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <div id="wrapper">
-        <div id="sidebar-wrapper">
-            <div class="primary sidebar">
-                <a href="/" class="row accent header">
-                    <div class="col-12 font-weight-light text-center" id="name-card">Caelen Feller</div>
-                    <p class="col-12 text-center">
-                        Software developer & researcher <br>
-                        with a background in HPC, <br>
-                        mathematics and ML.
-                    </p>
-                </a>
-                <div class="row accent">
-                    <p class="col-12 text-center">
-                        <a href="/#aboutMe">More about me.</a>
-                    </p>
-                </div>
-                <div class="row center">
-                    <p class="col-12 text-center">
-                        I am starting work with Partec AG
-                        in November of 2023, as such
-                        I am no longer seeking new roles.
-                    </p>
-                </div>
-
-                <div class="row center">
-                    <p class="col-12 text-center">
-                        Please find my CV on <a href="https://www.linkedin.com/in/caelen-feller/">LinkedIn</a>.
-                    </p>
-                </div>
-
-                <div class="footer">
-                    <div class="row accent">
-                        <div class="col"></div>
-                        <p class="col-2 text-center"><a href="https://github.com/caelen-feller"><i
-                                    class="fab fa-github"></i></a></p>
-                        <p class="col-2 text-center"><a href="mailto:caelenfeller@gmail.com"><i
-                                    class="fa fa-envelope"></i></a></p>
-                        <p class="col-2 text-center"><a href="https://www.linkedin.com/in/caelen-feller/"><i
-                                    class="fab fa-linkedin"></i></a></p>
-                        <div class="col"></div>
-                    </div>
-                </div>
-            </div>
+<body class="flex flex-wrap flex-nowrap-l helvetica bg-primary white">
+  <aside class="fixed top-0 bottom-0 left-0 w5-5 bg-accent dn db-l">
+    <div class="flex flex-column h-100 tc">
+      <header class="bg-primary-light pt5 pa3">
+        <img src="https://avatars.githubusercontent.com/u/3074658" class="db  br-100 mh-5 mw-5 mb4" alt="avatar" />
+        <h1 class="f2 fw4">Caelen Murphy Feller</h1>
+        <h3 class="f4 fw1 mt3 mb1 lh-title">
+          Software & Architecture Development Engineer <br />
+          @ParTec AG
+        </h3>
+        <a class="link dotted dim white db mv4 f4 fw1 ttu tracked" href="/">
+          Home</a>
+      </header>
+      <footer class="tl flex flex-column justify-end w-100 h-100">
+        <div class="pv4 bg-primary-light f4 fw1 ttu tracked lh-copy">
+          <ul class="list-arrow">
+            <li>
+              <a class="link dotted dim white" href="https://www.link dottededin.com/in/caelen-feller/">
+                LinkedIn & CV
+              </a>
+            </li>
+            <li>
+              <a class="link dotted dim white" href="https://github.com/caelen-feller">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a class="link dotted dim white" href="mailto:caelenfeller@gmail.com">
+                Email
+              </a>
+            </li>
+          </ul>
         </div>
-
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col content">
-                        <h1>Internship 2018</h1>
-                        <hr />
-                        <p><strong> Arbitrary Precision Computation of Modular Functions</strong></p>
-                        <p><em>Project Members: Caelen Feller. Supervisor: Jan Manschot</em> </p>
-                        <hr />
-                        <p><a href="docs/caelen-feller-report.pdf">Project Report</a></p>
-                        <p><a href="docs/short-presentation.pdf">Slides from Seminar during Project</a></p>
-                        <p><a href="https://github.com/caelen-feller/complex-plots">Plotting Library Code -
-                                Incomplete</a></p>
-                        <p>Image Gallery: </p>
-                        <p><img alt="Eisenstein 4" src="img/modular-forms/e4.jpg" /></p>
-                        <p>Eisenstein series, weight 4.</p>
-                        <p><img alt="Eisenstein 6" src="img/modular-forms/std/e6q.jpg" /></p>
-                        <p>Eisenstein Series of weight 12 on upper half plane, as function of nome.</p>
-                        <p>If you would like to see more, check out <a
-                                href="https://github.com/caelen-feller/caelen-feller.github.io/tree/main/2018-internship/img">this
-                                folder</a>.</p>
-                    </div>
-                    <div class="col-1"></div>
-                </div>
-            </div>
+        <div class="tc f7 fw1 ttu tracked ph3 pv3 bg-primary-light bt">
+          Copyright © 2024 Caelen Murphy Feller
         </div>
+      </footer>
+    </div>
+  </aside>
 
-        <script src="/js/vendor/modernizr-3.5.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/main.js"></script>
+  <div class="flex-no-shrink w5-5 dn db-l"></div>
+
+  <header class="bg-primary-light db dn-l w-100 flex flex-column tc pa4">
+    <h1 class="f2 fw4"><a class="link dim white" href="/">Caelen Murphy Feller</a></h1>
+    <h3 class="f4 fw1 mt0 lh-title">
+      Software & Architecture Development Engineer
+      @ ParTec AG
+    </h3>
+  </header>
+
+  <main class="w-100 f4 measure-wider pa3 lh-copy center">
+    <article>
+      <h1>Internship 2018</h1>
+      <hr />
+      <p><strong> Arbitrary Precision Computation of Modular Functions</strong></p>
+      <p><em>Project Members: Caelen Feller. Supervisor: Jan Manschot</em> </p>
+      <hr />
+      <p><a class="link dotted dim"href="docs/caelen-feller-report.pdf">Project Report</a></p>
+      <p><a class="link dotted dim"href="docs/short-presentation.pdf">Slides from Seminar during Project</a></p>
+      <p><a class="link dotted dim"href="https://github.com/caelen-feller/complex-plots">Plotting Library Code -
+          Incomplete</a></p>
+      <p>Image Gallery: </p>
+      <p><img class="mw-100" alt="Eisenstein 4" src="img/modular-forms/e4.jpg" /></p>
+      <p>Eisenstein series, weight 4.</p>
+      <p><img class="mw-100" alt="Eisenstein 6" src="img/modular-forms/std/e6q.jpg" /></p>
+      <p>Eisenstein Series of weight 12 on upper half plane, as function of nome.</p>
+      <p>If you would like to see more, check out 
+        <a class="link dotted dim"href="https://github.com/caelen-feller/caelen-feller.github.io/tree/main/2018-internship/img">this
+          folder</a>.</p>
+    </article>
+  </main>
+
+  <footer class="db dn-l w-100 fw1 bg-primary-light ttu tracked lh-copy">
+    <div class="pa4 f4 flex justify-around">
+      <span>
+        <a class="link dotted dim white" href="https://www.link dottededin.com/in/caelen-feller/">
+          [LinkedIn]
+        </a>
+      </span>
+      <span>
+        <a class="link dotted dim white" href="https://github.com/caelen-feller">
+          [GitHub]
+        </a>
+      </span>
+      <span>
+        <a class="link dotted dim white" href="mailto:caelenfeller@gmail.com">
+          [Email]
+        </a>
+      </span>
+      </ul>
+    </div>
+    <div class="tc f7 ph3 pv3 bt">
+      Copyright © 2024 Caelen Murphy Feller
+    </div>
+  </footer>
 </body>
 
 </html>

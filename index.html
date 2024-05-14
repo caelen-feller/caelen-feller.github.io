@@ -1,169 +1,163 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Caelen Feller - Homepage</title>
-    <meta name="description" content="Caelen Feller's Personal Webpage">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
+  <meta charset="utf-8" />
+  <title>Homepage - Caelen Murphy Feller</title>
+  <meta name="description" content="Caelen Murphy Feller's Personal Webpage" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
+  <link rel="stylesheet" href="/css/main.css" />
 </head>
 
-<body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <div id="wrapper">
-        <div id="sidebar-wrapper">
-            <div class="primary sidebar">
-                <a href="/" class="row accent header">
-                    <div class="col-12 font-weight-light text-center" id="name-card">Caelen Feller</div>
-                    <p class="col-12 text-center">
-                        Software developer & researcher <br>
-                        with a background in HPC, <br>
-                        mathematics and ML.
-                    </p>
-                </a>
-                <div class="row accent">
-                    <p class="col-12 text-center">
-                        <a href="/#aboutMe">More about me.</a>
-                    </p>
-                </div>
-                <div class="row center">
-                    <p class="col-12 text-center">
-                        I am starting work with Partec AG
-                        in November of 2023, as such
-                        I am no longer seeking new roles.
-                    </p>
-                </div>
-
-                <div class="row center">
-                    <p class="col-12 text-center">
-                        Please find my CV on <a href="https://www.linkedin.com/in/caelen-feller/">LinkedIn</a>.
-                    </p>
-                </div>
-
-                <div class="footer">
-                    <div class="row accent">
-                        <div class="col"></div>
-                        <p class="col-2 text-center"><a href="https://github.com/caelen-feller"><i
-                                    class="fab fa-github"></i></a></p>
-                        <p class="col-2 text-center"><a href="mailto:caelenfeller@gmail.com"><i
-                                    class="fa fa-envelope"></i></a></p>
-                        <p class="col-2 text-center"><a href="https://www.linkedin.com/in/caelen-feller/"><i
-                                    class="fab fa-linkedin"></i></a></p>
-                        <div class="col"></div>
-                    </div>
-                </div>
-            </div>
+<body class="flex flex-wrap flex-nowrap-l helvetica bg-primary white">
+  <aside class="fixed top-0 bottom-0 left-0 w5-5 bg-accent dn db-l">
+    <div class="flex flex-column h-100 tc">
+      <header class="bg-primary-light pt5 pa3">
+        <img src="https://avatars.githubusercontent.com/u/3074658" class="db  br-100 mh-5 mw-5 mb4" alt="avatar" />
+        <h1 class="f2 fw4">Caelen Murphy Feller</h1>
+        <h3 class="f4 fw1 mt3 mb1 lh-title">
+          Software & Architecture Development Engineer <br />
+          @ParTec AG
+        </h3>
+        <a class="link dotted dim white db mv4 f4 fw1 ttu tracked" href="/">
+          Home</a>
+      </header>
+      <footer class="tl flex flex-column justify-end w-100 h-100">
+        <div class="pv4 bg-primary-light f4 fw1 ttu tracked lh-copy">
+          <ul class="list-arrow">
+            <li>
+              <a class="link dotted dim white" href="https://www.link dottededin.com/in/caelen-feller/">
+                LinkedIn & CV
+              </a>
+            </li>
+            <li>
+              <a class="link dotted dim white" href="https://github.com/caelen-feller">
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a class="link dotted dim white" href="mailto:caelenfeller@gmail.com">
+                Email
+              </a>
+            </li>
+          </ul>
         </div>
-
-        <div id="page-content-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-1"></div>
-                    <div class="col content">
-                        <h2>Past Projects:</h2>
-                        <p>
-                            <a href="https://github.com/caelen-feller">My Github</a> is the best place to find my work,
-                            but you can find further information on my more discursive projects here.
-                        </p>
-                        <ul>
-                            <li><a href="https://github.com/caelen-feller/hestia-clone">Hestia</a> - A Hierarchical
-                                Storage Manager (HSM) for hetereogeneous devices - <a data-toggle="collapse"
-                                    href="#moreInfoHestia" role="button" aria-expanded="false"
-                                    aria-controls="moreInfoHestia"> see more</a>:</li>
-                            <div class="collapse" id="moreInfoHestia">
-                                <p style="margin: 1em;">
-                                    Hestia's role in the IO-SEA project was/is to provide an efficient storage
-                                    manipulation API, which provides an event feed of storage events allowing a "policy
-                                    manager" (based on CEA's Robinhood engine) to manipulate data across the tiers
-                                    exposed by Hestia. The policy manager will use the feed to ensure the data are in
-                                    the optimal locations for user-end applications on target cluster.
-
-                                    My initial focus in Hestia was in the DevOps of the project, overhauling this
-                                    completely to provide a more robust continuous integration toolchain which fully
-                                    utilizes Gitlab's CI toolkit and containerized workflows, and well as providing a
-                                    new, automated testing and deployment workflow. Following this I implemented a first
-                                    draft of Hestia's event feed, and presented this to stakeholders and collaborators
-                                    for feedback. I helped in using this feedback to create the feature's second
-                                    revision. Participated in the target-driven testing and review for delivering
-                                    Hestia's first full release. Re-worked the CI system once more as the complexity of
-                                    the project's needs grew into a re-usable and testable Python module for CI
-                                    operations.
-
-                                    Additionally, I took advantage of time provided by ICHEC to pursue development of my
-                                    other skill sets by taking part in EuroCC-run workshops. Notable mentions include a
-                                    multi-day workshop on the topic of distributed machine learning techniques in a HPC
-                                    context and and introduction to the use of the ParaStation software suite.
-                                </p>
-                            </div>
-                            <li>Final Year Project - <a href="https://github.com/caelen-feller/fyp">Solving Laplace
-                                    Problems with Corner Singularities</a></li>
-                            <li>PRACE & EPCC Research Internship - <a href="/2019-internship/">Parallel Computing
-                                    Demonstrations on WeeARCHIE</a></li>
-                            <li>Ausar Geophysical - <a href="https://arxiv.org/abs/1907.01497">Seismic Data
-                                    Denoising and Deblending using
-                                    Deep Learning</a></li>
-                            <li>TCD Undergraduate Internship - <a href="/2018-internship/">Arbitrary
-                                    Precision Computation of Modular Forms</a></li>
-                        </ul>
-                        <h2 id="aboutMe"> About me</h2>
-                        <p>
-                            Caelen joined <a href="https://par-tec.com/">Partec-AG</a> in November 2023 as a Software and 
-                            Architecture Development Engineer. She works primarily in DevOps and integration of the
-                            ParaStation Software suite with production systems.
-
-                        </p>
-                        <p>
-                            Caelen joined <a href="https://www.ichec.ie/">ICHEC Dublin</a> in April 2023. At ICHEC, she
-                            was involved in developing software for hierarchical storage management (HSM). She
-                            participated in completing the <a href="https://iosea-project.eu/">IO-SEA</a> WP4
-                            Deliverable 4.3,
-                            working on the HSM API <a href="https://git.ichec.ie/io-sea-internal/hestia">Hestia</a>.
-                        </p>
-                        <p>
-                            Prior to joining ICHEC, Caelen worked on research projects in HPC, mathematical modelling
-                            (of EEG signals and PDEs), quantum computing, machine learning, and numerical computation of
-                            complex functions. This research was conducted with EPCC/PRACE, Trinity College Dublin,
-                            Equal1, Ausar Geophysical and TCD respectively between 2016 and 2022.
-                        </p>
-                        <p>
-                            She completed her undergraduate degree with Trinity College Dublin in 2020. She enjoys
-                            working on community outreach/educational projects, such as her work with the WEEArchie
-                            Raspberry Pi HPC mini-cluster and several years of teaching extracurricular mathematics
-                            classes on weekends for secondary school students in the Junior Mathematics Enrichment
-                            Program of UCD. In the wake of these experiences, she is interested in establishing
-                            solutions that allow for accessible and effective education a society dealing with the
-                            impacts of COVID.
-                        <p>
-                            Caelen is an avid reader of fiction, enjoys board games and peaceful walks. She can juggle 3
-                            objects quite well, and 4 quite poorly. She is currently learning the constructed language
-                            Toki Pona, and re-learning Irish - má mhaith leat caint as Gaeilge leí.
-                        </p>
-                    </div>
-                    <div class="col-1"></div>
-                </div>
-            </div>
+        <div class="tc f7 fw1 ttu tracked ph3 pv3 bg-primary-light bt">
+          Copyright © 2024 Caelen Murphy Feller
         </div>
+      </footer>
+    </div>
+  </aside>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+  <div class="flex-no-shrink w5-5 dn db-l"></div>
+
+  <header class="bg-primary-light db dn-l w-100 flex flex-column tc pa4">
+    <h1 class="f2 fw4"><a class="link dim white" href="/">Caelen Murphy Feller</a></h1>
+    <h3 class="f4 fw1 mt0 lh-title">
+      Software & Architecture Development Engineer
+      @ ParTec AG
+    </h3>
+  </header>
+
+  <main class="w-100 f4 measure-wider pa3 lh-copy center">
+    <article>
+      <h1>Past Projects</h1>
+      <p class="i">
+        <a class="link dotted dim" href="https://github.com/caelen-feller">My GitHub</a>
+        is the best place to find my openly available work, but you can find
+        further information on my more discursive projects here.
+      </p>
+      <ul class="clear list-arrow">
+        <li class="mb4 fl">
+          <span class="fl w-100 w-80-ns">Hestia &mdash; A Hierarchical Storage Manager (HSM) for
+            hetereogeneous devices</span>
+          <a class="tr fr w-100 w-20-ns link dotted dim" href="/hestia">[Project page]</a>
+        </li>
+        
+        <li class="mb4 fl">
+          <span class="fl w-100 w-80-ns">Final Year Project &mdash; "Solving Laplace Problems with Corner
+            Singularities"</span>
+          <a class="tr fr w-100 w-20-ns link dotted dim" href="https://github.com/caelen-feller/fyp">[GitHub page]</a>
+        </li>
+        <li class="mb4 fl">
+          <span class="fl w-100 w-80-ns">PRACE & EPCC Research Internship &mdash; "Parallel Computing
+            Demonstrations on WeeARCHIE"</span>
+          <a class="tr fr w-100 w-20-ns link dotted dim" href="/2019-internship/">[Project page]</a>
+        </li>
+        <li class="mb4 fl">
+          <span class="fl w-100 w-80-ns">Ausar Geophysical &mdash; "Seismic Data Denoising and Deblending
+            using Deep Learning"</span>
+          <a class="tr fr w-100 w-20-ns link dotted dim" href="https://arxiv.org/abs/1907.01497">[arXiv pre-print]</a>
+        </li>
+        <li class="mb4 fl"><span class="fl w-100 w-80-ns">
+            TCD Undergraduate Internship &mdash; "Arbitrary Precision
+            Computation of Modular Forms"</span>
+          <a class="tr fr w-100 w-20-ns link dotted dim" href="/2018-internship/">[Project page]</a>
+        </li>
+      </ul>
+    </article>
+    <article>
+      <h1>About me</h1>
+      <p>
+        Caelen joined
+        <a class="link dotted dim" href="https://par-tec.com/">ParTec AG</a>
+        in November 2023 as a Software and Architecture Development Engineer.
+        She works primarily in DevOps, with particular experience in Ansible,
+        Gitlab CI/CD and container/VM orchestration. She is also developing
+        tools for integration of the ParaStation Software suite with
+        production systems such as the Exascale cluster
+        <a class="link dotted dim" href="https://www.fz-juelich.de/en/ias/jsc/jupiter">JUPITER</a>.
+      </p>
+      <p>
+        Prior to joining ParTec, she worked with
+        <a class="link dotted dim" href="https://www.ichec.ie/">ICHEC Dublin</a>
+        in 2023. At ICHEC, she was involved in developing software for
+        hierarchical storage management (HSM). She participated in completing
+        the
+        <a class="link dotted dim" href="https://iosea-project.eu/">IO-SEA</a>
+        WP4 Deliverable 4.3, working on the HSM API
+        <a class="link dotted dim" href="https://git.ichec.ie/io-sea-internal/hestia">Hestia</a>, and DevOps for these
+        projects. Prior to this, she has worked on
+        research projects in HPC, mathematical modelling (of EEG signals and
+        PDEs), quantum computing, machine learning, and numerical computation
+        of complex functions. She completed her undergraduate degree with
+        Trinity College Dublin in 2020.
+      </p>
+      <p>
+        Caelen is an avid reader of fiction, particularly science fiction.
+        Some favourites are "Annihilation" by Jeff VanderMeer, "Children of
+        Time" by Adrian Tchaikovsky and "Ra", by qntm. She also enjoys board
+        games and long walks. She can juggle 3 objects quite well, and 4 quite
+        poorly. In addition to English, she can speak the constructed language
+        Toki Pona, French, and Irish &mdash; má mhaith leat caint as Gaeilge
+        leí.
+      </p>
+    </article>
+  </main>
+  <footer class="db dn-l w-100 fw1 bg-primary-light ttu tracked lh-copy">
+    <div class="pa4 f4 flex justify-around">
+      <span>
+        <a class="link dotted dim white" href="https://www.link dottededin.com/in/caelen-feller/">
+          [LinkedIn]
+        </a>
+      </span>
+      <span>
+        <a class="link dotted dim white" href="https://github.com/caelen-feller">
+          [GitHub]
+        </a>
+      </span>
+      <span>
+        <a class="link dotted dim white" href="mailto:caelenfeller@gmail.com">
+          [Email]
+        </a>
+      </span>
+      </ul>
+    </div>
+    <div class="tc f7 ph3 pv3 bt">
+      Copyright © 2024 Caelen Murphy Feller
+    </div>
+  </footer>
 </body>
 
 </html>

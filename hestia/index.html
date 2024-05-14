@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Summer of HPC - Caelen Murphy Feller</title>
+  <title>Hestia - Caelen Murphy Feller</title>
   <meta name="description" content="Caelen Murphy Feller's Personal Webpage" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css" />
@@ -62,59 +62,42 @@
 
   <main class="w-100 f4 measure-wider pa3 lh-copy center">
     <article>
-      <h1>PRACE Summer of HPC @ EPCC</h1>
-
-      <hr />
-
-      <p class="b">Parallel Computing Demonstrations on Wee Archie</p>
-
-      <p class="i">Project Members: Caelen Feller. Mentor: Dr. Gordon Gibb</p>
-
-      <hr />
-
-      <h3>Video Presentation on Project</h3>
-
-      <iframe class="w-100 h5" width="1000" height="1000" src="https://www.youtube-nocookie.com/embed/gqUi-F9mj4c"
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-
-      <h3><a class="link dotted dim" href="SoHPC2019_final_1907.pdf">Project Report</a></h3>
-
-      <h3>Project Code</h3>
+      <h1> Hestia
+        <hr />
+      </h1>
 
       <p>
-        <a class="link dotted dim" href="https://github.com/caelen-feller/wee_archie/">On my github</a>, you can find
-        all
-        the code I created during the summer that I wanted to publish in the sohpc branches.
+        The Hestia project was a component of <a class="link dotted dim" href="https://iosea-project.eu/">IO-SEA's</a>
+        software stack, fulfilled by ICHEC. I was part of the team for this project during 2023. A mirror of the code
+        from the project up till the point I left is <a class="link dotted dim"
+          href="https://github.com/caelen-feller/hestia-clone">available here</a>.
       </p>
-
+      <hr />
       <p>
-        You can follow the Wee Archie project's official development on <a class="link dotted dim"
-          href="https://github.com/EPCCed/wee_archie/">their github</a>.</p>
-
+        Hestia's role in the IO-SEA project was to provide an efficient
+        storage manipulation API, which provides an event feed of storage
+        events allowing a "policy manager" (based on CEA's Robinhood
+        engine) to manipulate data across the tiers exposed by Hestia.
+        The policy manager uses the feed to ensure the data are in the
+        optimal locations for user-end applications on target cluster.
+      </p>
       <p>
-        You can get instructions on how to make your own Raspberry Pi computing cluster <a class="link dotted dim"
-          href="https://epcced.github.io/wee_archlet/">here</a>.</p>
-
-      <h3>Project Blog</h3>
-
-      <p>Posts with Summer of HPC: </p>
-
-      <ul>
-        <li><a class="link dotted dim" href="https://summerofhpc.prace-ri.eu/?p=19709">A Wee Farewell</a></li>
-        <li><a class="link dotted dim"
-            href="https://summerofhpc.prace-ri.eu/podcast/interview-with-dr-gordon-gibb-epcc/">Podcast
-            with Dr. Gordon Gibb</a></li>
-        <li><a class="link dotted dim" href="https://summerofhpc.prace-ri.eu/making-waves/">Making Waves</a></li>
-        <li><a class="link dotted dim" href="https://summerofhpc.prace-ri.eu/teaching-a-pi-to-talk/">Teaching a Pi to
-            Talk</a></li>
-        <li><a class="link dotted dim" href="https://summerofhpc.prace-ri.eu/caelen-feller/">Self Introduction</a></li>
-        <li><a class="link dotted dim"
-            href="https://summerofhpc.prace-ri.eu/parallel-computing-demonstrators-on-wee-archie-2/">Project
-            Description</a></li>
-      </ul>
+        My initial focus in Hestia was in the DevOps of the project,
+        overhauling this completely to provide a more robust continuous
+        integration toolchain which fully utilizes Gitlab's CI toolkit and
+        containerized workflows, and well as providing a new, automated
+        testing and deployment workflow.
+      </p>
+      <p>
+        Following this I implemented a first draft of Hestia's event feed, and presented this to stakeholders and
+        collaborators for feedback. I helped in using this feedback to create the feature's second revision. I
+        participated in the target-driven testing and review for delivering Hestia's first full release. Finally, I
+        re-worked the CI system once more as the complexity of the project's needs grew into a re-usable and testable
+        Python module for CI operations.
+      </p>
     </article>
   </main>
+
   <footer class="db dn-l w-100 fw1 bg-primary-light ttu tracked lh-copy">
     <div class="pa4 f4 flex justify-around">
       <span>
